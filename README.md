@@ -6,4 +6,11 @@ This could not only save farmers from spending extra money on fertilizers but al
 on the same patch of land repeatedly, which depletes the solid from its natural
 resources.
 
-I have used Tensor flow for predicting the model and also trying to implement UI for easy usage!
+Initially we have created a custom dataset which contains all the attribute as mentioned in the given problem statement.
+Using pandas we have initially read the data present in it and checked wheather any kind of null data is present in it or not.
+Also using scikit library we have check wheather the created dataset is ideal to proceed with training or not
+The details of those parameter are shared in the repository under the file Tri_para_check.ipynb
+
+I have used Tensor flow and ANN (Artificial Neural Network) with 4 hidden layers for training the model, wecomplied the model with ADAM optimizer 
+with a learning rate of 0.01. Upon training for 50 epochs we gained an accuracy of 0.9627 and a loss of 0.084
+Then I have also used Gradio Library for User Interface.
